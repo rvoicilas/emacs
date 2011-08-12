@@ -1,0 +1,15 @@
+[submodule "vendor/tuareg"]
+	path = vendor/tuareg
+	url = https://github.com/emacsmirror/tuareg.git
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = https://github.com/magit/magit.git
+[submodule "vendor/python-mode"]
+	path = vendor/python-mode
+	url = https://github.com/emacsmirror/python-mode.git
+[submodule "vendor/auto-complete"]
+	path = vendor/auto-complete
+	url = https://github.com/m2ym/auto-complete.git
+[submodule "vendor/pymacs"]
+	path = vendor/pymacs
+	url = https://github.com/pinard/Pymacs.git
