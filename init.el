@@ -15,6 +15,7 @@
 (add-path "emacs/vendor/pymacs")
 (add-path "emacs/vendor/auto-complete")
 (add-path "emacs/vendor/tuareg")
+(add-path "emacs/vendor/rinari")
 )
 
 ; OCaml setup
@@ -25,6 +26,7 @@
 (require 'python)
 (require 'auto-complete)
 (require 'magit)
+(require 'rinari)
 
 
 (global-font-lock-mode t)

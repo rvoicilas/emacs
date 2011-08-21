@@ -13,3 +13,6 @@
 [submodule "vendor/pymacs"]
 	path = vendor/pymacs
 	url = https://github.com/pinard/Pymacs.git
+[submodule "vendor/rinari"]
+	path = vendor/rinari
+	url = https://github.com/eschulte/rinari.git
