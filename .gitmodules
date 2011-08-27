@@ -16,3 +16,6 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = https://github.com/eschulte/rinari.git
+[submodule "colors/color-theme-tango-2"]
+	path = colors/color-theme-tango-2
+	url = https://github.com/wfarr/color-theme-tango-2

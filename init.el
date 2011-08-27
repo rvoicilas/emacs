@@ -30,11 +30,15 @@
 
 
 (global-font-lock-mode t)
-
-; This is not really safe
+(global-auto-complete-mode t)
+(setq column-number-mode t)
+(setq auto-save-default nil)
+(setq inhibit-startup-message t)
 (setq make-backup-files nil)
 
-; load my theme
-(load-file (concat emacs-root "emacs/colors/color-theme-blackboard.el"))
+; load a color theme
+(load-file (concat emacs-root "emacs/colors/color-theme-tango-2/color-theme-tango-2.el"))
 (require 'color-theme)
-(color-theme-blackboard)
+(color-theme-tango-2)
+;(load-file (concat emacs-root "emacs/colors/color-theme-blackboard.el"))
+;(color-theme-blackboard)
