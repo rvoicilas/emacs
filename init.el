@@ -17,6 +17,7 @@
 (add-path "emacs/vendor/tuareg")
 (add-path "emacs/vendor/rinari")
 (add-path "emacs/vendor/js2-mode")
+(add-path "emacs/vendor/coffee-mode")
 )
 
 ; OCaml setup
@@ -33,7 +34,19 @@
 (require 'auto-complete)
 (require 'magit)
 (require 'rinari)
+(require 'coffee-mode)
 
+; Coffeescript setup
+(defun coffee-custom ()
+  "coffee-mode-hook"
+  (set (make-local-variable 'tab-width) 2))
+
+(add-hook 'coffee-mode-hook
+          '(lambda() (coffee-custom)))
+
+
+; Comment this out if want the default font size
+(set-face-attribute 'default nil :height 100)
 
 (global-font-lock-mode t)
 (global-auto-complete-mode t)
