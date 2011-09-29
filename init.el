@@ -16,12 +16,18 @@
 (add-path "emacs/vendor/auto-complete")
 (add-path "emacs/vendor/tuareg")
 (add-path "emacs/vendor/rinari")
+(add-path "emacs/vendor/js2-mode")
 )
 
 ; OCaml setup
 (add-to-list 'auto-mode-alist '("\\.ml[iylp]?" . tuareg-mode))
 (autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
 (autoload 'camldebug "camldebug" "Run the caml debugger" t)
+
+; js2-mode setup
+; M-x byte-compile-file RET <path to js2-mode.el> RET
+(autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (require 'python)
 (require 'auto-complete)
@@ -36,9 +42,21 @@
 (setq inhibit-startup-message t)
 (setq make-backup-files nil)
 
+; comment this out if you want the default font size
+(set-face-attribute 'default nil :height 100)
+
+; cwd set to root emacs root
+(setq default-directory emacs-root)
+
 ; load a color theme
 (load-file (concat emacs-root "emacs/colors/color-theme-tango-2/color-theme-tango-2.el"))
 (require 'color-theme)
 (color-theme-tango-2)
 ;(load-file (concat emacs-root "emacs/colors/color-theme-blackboard.el"))
 ;(color-theme-blackboard)
+
+;; Always show matching parens
+(show-paren-mode t)
+
+;; Delete trailing whitespaces
+(add-hook 'before-save-hook (lambda ()(delete-trailing-whitespace)))

@@ -19,3 +19,6 @@
 [submodule "colors/color-theme-tango-2"]
 	path = colors/color-theme-tango-2
 	url = https://github.com/wfarr/color-theme-tango-2
+[submodule "vendor/js2-mode"]
+	path = vendor/js2-mode
+	url = https://github.com/emacsmirror/js2-mode.git
