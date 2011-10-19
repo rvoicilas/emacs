@@ -18,7 +18,12 @@
 (add-path "emacs/vendor/rinari")
 (add-path "emacs/vendor/js2-mode")
 (add-path "emacs/vendor/coffee-mode")
+(add-path "emacs/vendor/ess/lisp")
+(add-path "emacs/vendor/matlab-emacs")
 )
+
+; Matlab setup
+(load-library "matlab-load")
 
 ; OCaml setup
 (add-to-list 'auto-mode-alist '("\\.ml[iylp]?" . tuareg-mode))
@@ -35,6 +40,7 @@
 (require 'magit)
 (require 'rinari)
 (require 'coffee-mode)
+(require 'ess-site)
 
 ; Coffeescript setup
 (defun coffee-custom ()
