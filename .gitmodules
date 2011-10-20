@@ -1,6 +1,3 @@
-[submodule "vendor/tuareg"]
-	path = vendor/tuareg
-	url = https://github.com/emacsmirror/tuareg.git
 [submodule "vendor/magit"]
 	path = vendor/magit
 	url = https://github.com/magit/magit.git
@@ -22,9 +19,12 @@
 [submodule "vendor/js2-mode"]
 	path = vendor/js2-mode
 	url = https://github.com/emacsmirror/js2-mode.git
-[submodule "vendor/cofee-mode"]
+[submodule "vendor/coffee-mode"]
 	path = vendor/coffee-mode
 	url = git://github.com/defunkt/coffee-mode.git
 [submodule "vendor/matlab-emacs"]
 	path = vendor/matlab-emacs
 	url = https://github.com/ruediger/matlab-emacs.git
+[submodule "vendor/tuareg"]
+	path = vendor/tuareg
+	url = https://github.com/afeinberg/tuareg-mode.git
