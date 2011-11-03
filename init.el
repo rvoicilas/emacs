@@ -20,10 +20,16 @@
 (add-path "emacs/vendor/coffee-mode")
 (add-path "emacs/vendor/ess/lisp")
 (add-path "emacs/vendor/matlab-emacs")
+(add-path "emacs/vendor/clojure-mode")
+(add-path "emacs/vendor/paredit")
+(add-path "emacs")
 )
 
-; Matlab setup
-(load-library "matlab-load")
+; Clojure setup + paredit
+(require 'clojure-mode)
+(require 'paredit)
+(defun turn-on-paredit () (paredit-mode 1))
+(add-hook 'clojure-mode-hook 'turn-on-paredit)
 
 ; OCaml setup
 (add-to-list 'auto-mode-alist '("\\.ml[iylp]?" . tuareg-mode))
@@ -79,3 +85,6 @@
 
 ;; Delete trailing whitespaces
 (add-hook 'before-save-hook (lambda ()(delete-trailing-whitespace)))
+
+;; Load various customizations
+(load "custom.el")

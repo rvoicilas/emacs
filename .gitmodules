@@ -28,3 +28,9 @@
 [submodule "vendor/tuareg"]
 	path = vendor/tuareg
 	url = https://github.com/afeinberg/tuareg-mode.git
+[submodule "vendor/clojure-mode"]
+	path = vendor/clojure-mode
+	url = https://github.com/technomancy/clojure-mode.git
+[submodule "vendor/paredit"]
+	path = vendor/paredit
+	url = https://github.com/emacsmirror/paredit.git
