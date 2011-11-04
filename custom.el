@@ -9,7 +9,7 @@
 ;; NOTE: Requires that you have MTEST:
 ;; http://blogs.mathworks.com/steve/2009/02/03/mtest-a-unit-test-harness-for-matlab-code/
 ;; installed and in Matlab's path.
-;; Small cavity here: Matlab has to have its current working dir pointed to the tests dir,
+;; Small caveat here: Matlab has to have its current working dir pointed to the tests dir,
 ;; otherwise "runtests" will not work.
 (defun run-matlab-test ()
   (interactive)
