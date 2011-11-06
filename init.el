@@ -56,10 +56,6 @@
 (add-hook 'coffee-mode-hook
           '(lambda() (coffee-custom)))
 
-
-; Comment this out if want the default font size
-(set-face-attribute 'default nil :height 100)
-
 (global-font-lock-mode t)
 (global-auto-complete-mode t)
 (setq column-number-mode t)
@@ -85,6 +81,12 @@
 
 ;; Delete trailing whitespaces
 (add-hook 'before-save-hook (lambda ()(delete-trailing-whitespace)))
+
+;; Lose the UI
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+;; Keep the menu bar for now
+;;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 
 ;; Load various customizations
 (load "custom.el")
