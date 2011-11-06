@@ -1,2 +1,2 @@
-;(load "color-theme")
+(load "color-theme-custom")
 (load "matlab")
