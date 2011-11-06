@@ -32,11 +32,6 @@
 (defun turn-on-paredit () (paredit-mode 1))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
-; OCaml setup
-(add-to-list 'auto-mode-alist '("\\.ml[iylp]?" . tuareg-mode))
-(autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
-(autoload 'camldebug "camldebug" "Run the caml debugger" t)
-
 ; js2-mode setup
 ; M-x byte-compile-file RET <path to js2-mode.el> RET
 (autoload 'js2-mode "js2-mode" nil t)
