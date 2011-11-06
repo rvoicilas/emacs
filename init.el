@@ -52,30 +52,5 @@
 (add-hook 'coffee-mode-hook
           '(lambda() (coffee-custom)))
 
-(global-font-lock-mode t)
-(global-auto-complete-mode t)
-(setq column-number-mode t)
-(setq auto-save-default nil)
-(setq inhibit-startup-message t)
-(setq make-backup-files nil)
-
-; comment this out if you want the default font size
-(set-face-attribute 'default nil :height 100)
-
-; cwd set to root emacs root
-(setq default-directory emacs-root)
-
-;; Always show matching parens
-(show-paren-mode t)
-
-;; Delete trailing whitespaces
-(add-hook 'before-save-hook (lambda ()(delete-trailing-whitespace)))
-
-;; Lose the UI
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-;; Keep the menu bar for now
-;;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-
 ;; Load various customizations
 (load "raduv")
