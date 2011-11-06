@@ -22,7 +22,8 @@
 (add-path "emacs/vendor/matlab-emacs")
 (add-path "emacs/vendor/clojure-mode")
 (add-path "emacs/vendor/paredit")
-(add-path "emacs")
+(add-path "emacs/vendor/color-theme-tango-2")
+(add-path "emacs/raduv")
 )
 
 ; Clojure setup + paredit
@@ -69,13 +70,6 @@
 ; cwd set to root emacs root
 (setq default-directory emacs-root)
 
-; load a color theme
-(load-file (concat emacs-root "emacs/colors/color-theme-tango-2/color-theme-tango-2.el"))
-(require 'color-theme)
-(color-theme-tango-2)
-;(load-file (concat emacs-root "emacs/colors/color-theme-blackboard.el"))
-;(color-theme-blackboard)
-
 ;; Always show matching parens
 (show-paren-mode t)
 
@@ -89,4 +83,4 @@
 ;;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 
 ;; Load various customizations
-(load "custom.el")
+(load "raduv")
