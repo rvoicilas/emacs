@@ -5,5 +5,6 @@
 
 (semantic-mode 1)
 (require 'malabar-mode)
-(setq malabar-groovy-lib-dir "/tmp")
+; FIXME: Stop hardcoding this
+(setq malabar-groovy-lib-dir "~/emacs/vendor/malabar-1.4.0/lib")
 (add-to-list 'auto-mode-alist '("\\.java\\'" . malabar-mode))
