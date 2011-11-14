@@ -3,3 +3,4 @@
 (load "matlab")
 (load "ocaml")
 (load "py")
+(load "java")
