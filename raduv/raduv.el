@@ -1,6 +1,6 @@
 (load "color-theme-custom")
 (load "global")
-(load "matlab")
+(load "matlab-custom")
 (load "ocaml")
 (load "py")
 (load "java")
