@@ -16,7 +16,6 @@
 (add-path "emacs/vendor/auto-complete")
 (add-path "emacs/vendor/tuareg")
 (add-path "emacs/vendor/rinari")
-(add-path "emacs/vendor/js2-mode")
 (add-path "emacs/vendor/coffee-mode")
 (add-path "emacs/vendor/ess/lisp")
 (add-path "emacs/vendor/matlab-emacs")
@@ -34,11 +33,6 @@
 (require 'paredit)
 (defun turn-on-paredit () (paredit-mode 1))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
-
-; js2-mode setup
-; M-x byte-compile-file RET <path to js2-mode.el> RET
-(autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (require 'python)
 (require 'auto-complete)
