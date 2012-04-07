@@ -1,5 +1,7 @@
 ;; Global Emacs settings
 
+(require 'auto-complete)
+
 ;; Enable syntax highlighting
 (global-font-lock-mode t)
 

@@ -13,10 +13,7 @@
 (add-path "emacs/vendor/magit")
 (add-path "emacs/vendor/python-mode")
 (add-path "emacs/vendor/pymacs")
-(add-path "emacs/vendor/auto-complete")
 (add-path "emacs/vendor/tuareg")
-(add-path "emacs/vendor/rinari")
-(add-path "emacs/vendor/coffee-mode")
 (add-path "emacs/vendor/ess/lisp")
 (add-path "emacs/vendor/matlab-emacs")
 (add-path "emacs/vendor/clojure-mode")
@@ -37,20 +34,8 @@
 (add-hook 'clojure-mode-hook 'midje-mode)
 
 (require 'python)
-(require 'auto-complete)
 (require 'magit)
-(require 'rinari)
-(require 'coffee-mode)
 (require 'ess-site)
-
-; Coffeescript setup
-(defun coffee-custom ()
-  "coffee-mode-hook"
-  (set (make-local-variable 'tab-width) 2))
-
-(add-hook 'coffee-mode-hook
-          '(lambda() (coffee-custom)))
-
 
 (require 'package)
 (add-to-list 'package-archives
