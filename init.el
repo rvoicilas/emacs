@@ -25,6 +25,7 @@
 (add-path "emacs/vendor/color-theme-tango-2")
 (add-path "emacs/vendor/malabar-1.4.0/lisp")
 (add-path "emacs/vendor/color-theme-6.6.0")
+(add-path "emacs/vendor/scala-mode")
 (add-path "emacs/raduv")
 )
 
@@ -33,6 +34,7 @@
 (require 'paredit)
 (defun turn-on-paredit () (paredit-mode 1))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
+(add-hook 'clojure-mode-hook 'midje-mode)
 
 (require 'python)
 (require 'auto-complete)
@@ -48,6 +50,12 @@
 
 (add-hook 'coffee-mode-hook
           '(lambda() (coffee-custom)))
+
+
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
 
 ;; Load various customizations
 (load "raduv")

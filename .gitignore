@@ -3,3 +3,4 @@ ac-comphist.dat
 eproject.lst
 semanticdb
 srecode-map.el
+*.elc

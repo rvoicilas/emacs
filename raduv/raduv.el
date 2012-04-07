@@ -4,3 +4,4 @@
 (load "ocaml")
 (load "py")
 (load "java")
+(load "scala")
