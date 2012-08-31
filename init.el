@@ -23,16 +23,11 @@
 (add-path "emacs/vendor/malabar-1.4.0/lisp")
 (add-path "emacs/vendor/color-theme-6.6.0")
 (add-path "emacs/vendor/scala-mode")
+(add-path "emacs/vendor/ensime/dist/elisp")
 (add-path "emacs/raduv")
 )
 
-; Clojure setup + paredit
-(require 'clojure-mode)
-(require 'paredit)
-(defun turn-on-paredit () (paredit-mode 1))
-(add-hook 'clojure-mode-hook 'turn-on-paredit)
-(add-hook 'clojure-mode-hook 'midje-mode)
-
+; this don't actually require a dedicated file in raduv to be loaded
 (require 'python)
 (require 'magit)
 (require 'ess-site)

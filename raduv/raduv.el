@@ -5,3 +5,6 @@
 (load "py")
 (load "java")
 (load "scala")
+(load "clojure")
+(load "ruby")
+(load "javascript")

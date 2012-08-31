@@ -30,7 +30,7 @@
 (show-paren-mode t)
 
 ;; Delete trailing whitespaces
-(add-hook 'before-save-hook (lambda ()(delete-trailing-whitespace)))
+;; (add-hook 'before-save-hook (lambda ()(delete-trailing-whitespace)))
 
 ;; Lose the UI
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))

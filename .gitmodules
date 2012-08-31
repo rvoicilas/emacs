@@ -19,3 +19,6 @@
 [submodule "vendor/emacs-for-python"]
 	path = vendor/emacs-for-python
 	url = https://github.com/gabrielelanaro/emacs-for-python.git
+[submodule "vendor/ensime"]
+	path = vendor/ensime
+	url = https://github.com/aemoncannon/ensime.git
