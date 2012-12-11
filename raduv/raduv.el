@@ -8,3 +8,4 @@
 (load "clojure")
 (load "ruby")
 (load "javascript")
+(load "puppet")

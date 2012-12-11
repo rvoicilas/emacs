@@ -22,3 +22,12 @@
 [submodule "vendor/paredit"]
 	path = vendor/paredit
 	url = https://github.com/emacsmirror/paredit.git
+[submodule "vendor/rinari"]
+	path = vendor/rinari
+	url = https://github.com/eschulte/rinari.git
+[submodule "vendor/rvm"]
+	path = vendor/rvm
+	url = https://github.com/senny/rvm.el
+[submodule "vendor/puppet"]
+	path = vendor/puppet
+	url = https://github.com/puppetlabs/puppet-syntax-emacs.git
