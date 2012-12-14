@@ -31,3 +31,6 @@
 [submodule "vendor/puppet"]
 	path = vendor/puppet
 	url = https://github.com/puppetlabs/puppet-syntax-emacs.git
+[submodule "vendor/distel"]
+	path = vendor/distel
+	url = https://github.com/massemanet/distel.git

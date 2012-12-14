@@ -27,6 +27,7 @@
 (add-path "emacs/vendor/rinari")
 (add-path "emacs/vendor/puppet")
 (add-path "emacs/vendor/rvm")
+(add-path "emacs/vendor/distel/elisp")
 (add-path "emacs/raduv")
 )
 
