@@ -28,6 +28,7 @@
 (add-path "emacs/vendor/puppet")
 (add-path "emacs/vendor/rvm")
 (add-path "emacs/vendor/distel/elisp")
+(add-path "emacs/vendor/coffee-mode")
 (add-path "emacs/raduv")
 )
 

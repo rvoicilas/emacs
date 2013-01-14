@@ -34,3 +34,6 @@
 [submodule "vendor/distel"]
 	path = vendor/distel
 	url = https://github.com/massemanet/distel.git
+[submodule "vendor/coffee-mode"]
+	path = vendor/coffee-mode
+	url = https://github.com/defunkt/coffee-mode.git
