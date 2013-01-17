@@ -22,7 +22,6 @@
 (add-path "emacs/vendor/emacs-for-python")
 (add-path "emacs/vendor/color-theme-tango-2")
 (add-path "emacs/vendor/malabar-1.4.0/lisp")
-(add-path "emacs/vendor/color-theme-6.6.0")
 (add-path "emacs/vendor/scala-mode")
 (add-path "emacs/vendor/ensime/dist/elisp")
 (add-path "emacs/vendor/rinari")
