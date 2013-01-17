@@ -18,6 +18,7 @@
 (add-path "emacs/vendor/matlab-emacs")
 (add-path "emacs/vendor/clojure-mode")
 (add-path "emacs/vendor/paredit")
+(add-path "emacs/vendor/nrepl")
 (add-path "emacs/vendor/emacs-for-python")
 (add-path "emacs/vendor/color-theme-tango-2")
 (add-path "emacs/vendor/malabar-1.4.0/lisp")
