@@ -1,1 +1,2 @@
-(load "bubbleberry-theme")
+;(load "bubbleberry-theme")
+(load "monokai-theme")
