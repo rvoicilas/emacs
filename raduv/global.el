@@ -29,6 +29,9 @@
 ;; Always show matching parens
 (show-paren-mode t)
 
+;; Turn on current line higlightning
+(global-hl-line-mode 1)
+
 ;; Delete trailing whitespaces
 ;; (add-hook 'before-save-hook (lambda ()(delete-trailing-whitespace)))
 
