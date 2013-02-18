@@ -1,7 +1,7 @@
 (require 'clojure-mode)
 (require 'paredit)
 (require 'nrepl)
-
+(require 'clojure-test-mode)
 ;; ClojureScript
 (add-to-list 'auto-mode-alist '("\.cljs$" . clojure-mode))
 
