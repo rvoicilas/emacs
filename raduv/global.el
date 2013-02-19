@@ -32,6 +32,9 @@
 ;; Turn on current line higlightning
 (global-hl-line-mode 1)
 
+;; Cursor color white by default
+(set-cursor-color "white")
+
 ;; Delete trailing whitespaces
 ;; (add-hook 'before-save-hook (lambda ()(delete-trailing-whitespace)))
 
