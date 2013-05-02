@@ -40,3 +40,6 @@
 [submodule "vendor/monokai-theme"]
 	path = vendor/monokai-theme
 	url = https://github.com/rvoicilas/el-monokai-theme.git
+[submodule "vendor/scala-mode2"]
+	path = vendor/scala-mode2
+	url = https://github.com/hvesalai/scala-mode2.git
