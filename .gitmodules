@@ -43,3 +43,6 @@
 [submodule "vendor/scala-mode2"]
 	path = vendor/scala-mode2
 	url = https://github.com/hvesalai/scala-mode2.git
+[submodule "vendor/auto-complete"]
+	path = vendor/auto-complete
+	url = https://github.com/auto-complete/auto-complete.git
