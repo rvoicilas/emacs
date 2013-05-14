@@ -21,7 +21,7 @@
 (setq make-backup-files nil)
 
 ;; Comment this out if you want the default font size
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil :height 110)
 
 ;; Current working directory set to root emacs root
 (setq default-directory emacs-root)

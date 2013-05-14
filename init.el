@@ -24,7 +24,7 @@
 (add-path "emacs/vendor/emacs-for-python")
 (add-path "emacs/vendor/malabar-1.4.0/lisp")
 (add-path "emacs/vendor/scala-mode2")
-(add-path "emacs/vendor/ensime/src/main/elisp")
+(add-path "emacs/vendor/ensime/dist/elisp")
 (add-path "emacs/vendor/rinari")
 (add-path "emacs/vendor/puppet")
 (add-path "emacs/vendor/rvm")
