@@ -1,2 +1,2 @@
-;(load "bubbleberry-theme")
-(load "monokai-theme")
+(when (display-graphic-p)
+  (load "monokai-theme"))
