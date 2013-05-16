@@ -9,5 +9,5 @@
 (load "ruby")
 (load "javascript")
 (load "puppet")
-;(load "erlang-custom")
+(load "erlang-custom")
 (load "coffee")
