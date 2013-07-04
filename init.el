@@ -30,6 +30,7 @@
 (add-path "emacs/vendor/rvm")
 (add-path "emacs/vendor/distel/elisp")
 (add-path "emacs/vendor/coffee-mode")
+(add-path "emacs/vendor/go")
 (add-path "emacs/vendor/monokai-theme")
 (add-path "emacs/vendor/themes") ;; color themes
 (add-path "emacs/raduv")

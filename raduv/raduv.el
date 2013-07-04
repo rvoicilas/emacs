@@ -1,5 +1,6 @@
 (load "color-theme-custom")
 (load "global")
+(load "golang")
 ;(load "matlab-custom")
 ;(load "ocaml")
 ;(load "py")

@@ -14,3 +14,6 @@
 
 ;; enabled paredit in the nREPL buffer
 (add-hook 'nrepl-mode-hook 'paredit-mode)
+
+;; hide *nrepl-connection* and *nrepl-server* buffers from appearing when C-x b
+(setq nrepl-hide-special-buffers t)
