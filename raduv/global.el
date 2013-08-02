@@ -43,3 +43,7 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 ;; Keep the menu bar for now
 ;;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+
+;; The buffer scrolls by only one line, without repositioning
+;; the cursor to the center of the screen
+(setq scroll-step 1)
