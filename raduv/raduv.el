@@ -2,7 +2,7 @@
 (load "global")
 (load "golang")
 ;(load "matlab-custom")
-;(load "ocaml")
+(load "ocaml")
 ;(load "py")
 ;(load "java")
 (load "scala")
