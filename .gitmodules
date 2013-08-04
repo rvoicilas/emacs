@@ -4,9 +4,6 @@
 [submodule "vendor/matlab-emacs"]
 	path = vendor/matlab-emacs
 	url = https://github.com/ruediger/matlab-emacs.git
-[submodule "vendor/tuareg"]
-	path = vendor/tuareg
-	url = https://github.com/afeinberg/tuareg-mode.git
 [submodule "vendor/clojure-mode"]
 	path = vendor/clojure-mode
 	url = https://github.com/technomancy/clojure-mode.git
