@@ -26,6 +26,7 @@
 (add-path "emacs/vendor/scala-mode2")
 (add-path "emacs/vendor/ensime/dist/elisp")
 (add-path "emacs/vendor/rinari")
+(add-path "emacs/vendor/rspec-mode")
 (add-path "emacs/vendor/puppet")
 (add-path "emacs/vendor/rvm")
 (add-path "emacs/vendor/distel/elisp")

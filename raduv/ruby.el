@@ -5,3 +5,4 @@
 
 (require 'rvm)
 (require 'rinari)
+(require 'rspec-mode)
