@@ -1,6 +1,9 @@
 ;; Global Emacs settings
 
 (require 'auto-complete)
+(require 'ido)
+
+(ido-mode t)
 
 ;; Enable syntax highlighting
 (global-font-lock-mode t)
