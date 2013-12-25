@@ -34,10 +34,10 @@
 (add-path "emacs/vendor/go-mode")
 (add-path "emacs/vendor/monokai-theme")
 (add-path "emacs/vendor/themes") ;; color themes
-(add-path "emacs/raduv")
+(add-path "emacs/init.d")
 )
 
-; this don't actually require a dedicated file in raduv to be loaded
+; these don't actually require a dedicated file in init.d/ to be loaded
 (require 'python)
 (require 'magit)
 (require 'ess-site)
@@ -48,4 +48,4 @@
 (package-initialize)
 
 ;; Load various customizations
-(load "raduv")
+(load "init.d")
