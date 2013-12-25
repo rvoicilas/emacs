@@ -25,7 +25,6 @@
 (add-path "emacs/vendor/malabar-1.4.0/lisp")
 (add-path "emacs/vendor/scala-mode2")
 (add-path "emacs/vendor/ensime/dist/elisp")
-(add-path "emacs/vendor/rcodetools")
 (add-path "emacs/vendor/rinari")
 (add-path "emacs/vendor/rspec-mode")
 (add-path "emacs/vendor/puppet")
