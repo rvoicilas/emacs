@@ -49,3 +49,6 @@
 [submodule "vendor/go-mode"]
 	path = vendor/go-mode
 	url = https://github.com/dominikh/go-mode.el.git
+[submodule "vendor/rcodetools"]
+	path = vendor/rcodetools
+	url = https://github.com/tnoda/rcodetools.git

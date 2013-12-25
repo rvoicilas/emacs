@@ -7,3 +7,12 @@
 (require 'rvm)
 (require 'rinari)
 (require 'rspec-mode)
+
+(rvm-use-default)
+
+(eval-after-load 'ruby-mode
+  '(progn
+     (rvm-use-default)
+
+     (require 'rcodetools)
+     (define-key ruby-mode-map (kbd "C-c C-c") 'xmp)))
