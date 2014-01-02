@@ -16,3 +16,7 @@
 
      (require 'rcodetools)
      (define-key ruby-mode-map (kbd "C-c C-c") 'xmp)))
+
+(setq ruby-deep-arglist nil)
+(setq ruby-deep-indent-paren nil)
+(setq ruby-deep-indent-paren-style nil)
