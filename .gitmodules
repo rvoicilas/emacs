@@ -52,3 +52,6 @@
 [submodule "vendor/tuareg-mode"]
 	path = vendor/tuareg-mode
 	url = https://github.com/afeinberg/tuareg-mode.git
+[submodule "vendor/git-modes"]
+	path = vendor/git-modes
+	url = https://github.com/magit/git-modes.git

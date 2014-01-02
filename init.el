@@ -12,7 +12,11 @@
 (add-path "emacs/vendor")
 (add-path "emacs/vendor/auto-complete")
 (add-path "emacs/vendor/auto-complete/lib/popup")
+
+;required by magit
+(add-path "emacs/vendor/git-modes")
 (add-path "emacs/vendor/magit")
+
 (add-path "emacs/vendor/python-mode")
 (add-path "emacs/vendor/pymacs")
 (add-path "emacs/vendor/tuareg")
