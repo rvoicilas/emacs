@@ -18,3 +18,18 @@
 
 (require 'distel)
 (distel-setup)
+
+(erlang-flymake-only-on-save)
+
+;; flymake
+(defun flymake-next-error()
+  (interactive)
+  (flymake-goto-next-error)
+  (flymake-display-err-menu-for-current-line)
+)
+
+(defun flymake-next-error-hook()
+  (local-set-key (kbd "C-c C-v") 'flymake-next-error)
+)
+
+(add-hook 'erlang-mode-hook 'flymake-next-error-hook)
