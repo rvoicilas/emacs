@@ -4,3 +4,4 @@ eproject.lst
 semanticdb
 srecode-map.el
 *.elc
+elpa/
