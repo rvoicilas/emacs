@@ -19,7 +19,7 @@
 
 (add-path "emacs/vendor/python-mode")
 (add-path "emacs/vendor/pymacs")
-(add-path "emacs/vendor/tuareg")
+(add-path "emacs/vendor/tuareg-mode")
 (add-path "emacs/vendor/ess/lisp")
 (add-path "emacs/vendor/matlab-emacs")
 (add-path "emacs/vendor/clojure-mode")
