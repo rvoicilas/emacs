@@ -42,7 +42,6 @@
 )
 
 ; these don't actually require a dedicated file in init.d/ to be loaded
-(require 'python)
 (require 'magit)
 (require 'ess-site)
 
