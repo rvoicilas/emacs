@@ -1,9 +1,10 @@
+(setq erlang-root-dir (format "%s%s%s" "/usr/local/stow/" (getenv "ERLANG_VERSION") "/lib/erlang"))
+
 (add-to-list
  'load-path
- (car (file-expand-wildcards "/usr/local/stow/OTP_R16B02/lib/erlang/lib/tools-*/emacs")))
+ (car (file-expand-wildcards (format "%s%s" erlang-root-dir "/lib/tools-*/emacs"))))
 
-(setq erlang-root-dir "/usr/local/stow/OTP_R16B02/lib/erlang")
-(setq exec-path (cons "/usr/local/stow/OTP_R16B02/lib/erlang/bin" exec-path))
+(setq exec-path (cons (format "%s%s" erlang-root-dir "/bin") exec-path))
 
 (add-to-list 'auto-mode-alist '("\\.rel$"))
 (add-to-list 'auto-mode-alist '("\\.app$"))
