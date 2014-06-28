@@ -24,7 +24,7 @@
 (setq make-backup-files nil)
 
 ;; Comment this out if you want the default font size
-(set-face-attribute 'default nil :height 100)
+;; (set-face-attribute 'default nil :height 100)
 
 ;; Current working directory set to root emacs root
 (setq default-directory emacs-root)
@@ -50,3 +50,8 @@
 ;; The buffer scrolls by only one line, without repositioning
 ;; the cursor to the center of the screen
 (setq scroll-step 1)
+
+;; C mode settings
+(setq-default c-basic-offset 4
+	      tab-width 4
+	      indent-tabs-mode t)
