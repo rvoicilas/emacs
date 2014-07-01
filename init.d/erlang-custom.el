@@ -13,6 +13,7 @@
 (add-to-list 'auto-mode-alist '("\\.hrl$"))
 (add-to-list 'auto-mode-alist '("\\.erl$"))
 (add-to-list 'auto-mode-alist '("\\.yrl$"))
+(add-to-list 'auto-mode-alist '("rebar\\.config$" . erlang-mode))
 
 (require 'erlang-start)
 (require 'erlang-flymake)
@@ -20,9 +21,12 @@
 (require 'distel)
 (distel-setup)
 
+;; flymake
+
 (erlang-flymake-only-on-save)
 
-;; flymake
+(setq flymake-gui-warnings-enabled nil)
+
 (defun flymake-next-error()
   (interactive)
   (flymake-goto-next-error)
