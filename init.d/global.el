@@ -52,6 +52,6 @@
 (setq scroll-step 1)
 
 ;; C mode settings
-(setq-default c-basic-offset 4
-	      tab-width 4
-	      indent-tabs-mode t)
+;; (setq-default c-basic-offset 4
+;; 	      tab-width 4
+;; 	      indent-tabs-mode t)
