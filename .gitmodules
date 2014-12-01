@@ -55,3 +55,6 @@
 [submodule "vendor/git-modes"]
 	path = vendor/git-modes
 	url = https://github.com/magit/git-modes.git
+[submodule "vendor/cider"]
+	path = vendor/cider
+	url = git@github.com:clojure-emacs/cider.git
