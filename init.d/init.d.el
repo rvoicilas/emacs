@@ -4,7 +4,7 @@
 ;(load "matlab-custom")
 (load "ocaml")
 ;(load "py")
-;(load "java")
+(load "java")
 (load "scala")
 (load "clojure")
 (load "ruby")

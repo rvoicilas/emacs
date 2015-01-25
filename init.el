@@ -17,6 +17,9 @@
 (add-path "emacs/vendor/git-modes")
 (add-path "emacs/vendor/magit")
 
+(add-path "emacs/jdee-2.4.1/lisp")
+(add-path "emacs/vendor/gradle-mode")
+
 (add-path "emacs/vendor/python-mode")
 (add-path "emacs/vendor/pymacs")
 (add-path "emacs/vendor/tuareg-mode")
@@ -26,9 +29,7 @@
 (add-path "emacs/vendor/paredit")
 (add-path "emacs/vendor/cider")
 (add-path "emacs/vendor/emacs-for-python")
-(add-path "emacs/vendor/malabar-1.4.0/lisp")
 (add-path "emacs/vendor/scala-mode2")
-(add-path "emacs/vendor/ensime/dist/elisp")
 (add-path "emacs/vendor/rinari")
 (add-path "emacs/vendor/rspec-mode")
 (add-path "emacs/vendor/puppet")
