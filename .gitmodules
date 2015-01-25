@@ -58,3 +58,6 @@
 [submodule "vendor/cider"]
 	path = vendor/cider
 	url = git@github.com:clojure-emacs/cider.git
+[submodule "vendor/gradle-mode"]
+	path = vendor/gradle-mode
+	url = git@github.com:jacobono/emacs-gradle-mode.git
