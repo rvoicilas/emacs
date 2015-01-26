@@ -22,4 +22,5 @@
 (setq ruby-deep-indent-paren nil)
 (setq ruby-deep-indent-paren-style nil)
 
-
+(autoload 'rspec-mode "rspec-mode")
+(add-hook 'ruby-mode-hook (lambda () (rspec-mode)))
