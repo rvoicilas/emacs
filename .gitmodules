@@ -1,6 +1,3 @@
-[submodule "vendor/magit"]
-	path = vendor/magit
-	url = https://github.com/magit/magit.git
 [submodule "vendor/matlab-emacs"]
 	path = vendor/matlab-emacs
 	url = https://github.com/ruediger/matlab-emacs.git
@@ -28,33 +25,21 @@
 [submodule "vendor/distel"]
 	path = vendor/distel
 	url = https://github.com/massemanet/distel.git
-[submodule "vendor/coffee-mode"]
-	path = vendor/coffee-mode
-	url = https://github.com/defunkt/coffee-mode.git
 [submodule "vendor/nrepl"]
 	path = vendor/nrepl
 	url = https://github.com/kingtim/nrepl.el.git
 [submodule "vendor/monokai-theme"]
 	path = vendor/monokai-theme
 	url = https://github.com/rvoicilas/el-monokai-theme.git
-[submodule "vendor/scala-mode2"]
-	path = vendor/scala-mode2
-	url = https://github.com/hvesalai/scala-mode2.git
 [submodule "vendor/auto-complete"]
 	path = vendor/auto-complete
 	url = https://github.com/auto-complete/auto-complete.git
 [submodule "vendor/rspec-mode"]
 	path = vendor/rspec-mode
 	url = https://github.com/pezra/rspec-mode.git
-[submodule "vendor/go-mode"]
-	path = vendor/go-mode
-	url = https://github.com/dominikh/go-mode.el.git
 [submodule "vendor/tuareg-mode"]
 	path = vendor/tuareg-mode
 	url = https://github.com/ocaml/tuareg
-[submodule "vendor/git-modes"]
-	path = vendor/git-modes
-	url = https://github.com/magit/git-modes.git
 [submodule "vendor/cider"]
 	path = vendor/cider
 	url = git@github.com:clojure-emacs/cider.git

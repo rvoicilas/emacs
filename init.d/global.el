@@ -1,9 +1,14 @@
 ;; Global Emacs settings
 
 (require 'auto-complete)
-(require 'ido)
 
+;; ido setup
+(require 'ido)
+(require 'ido-vertical-mode)
 (ido-mode t)
+(ido-vertical-mode)
+(setq ido-use-faces t)
+(setq ido-vertical-show-count t)
 
 ;; Enable syntax highlighting
 (global-font-lock-mode t)

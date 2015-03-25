@@ -13,43 +13,59 @@
 (add-path "emacs/vendor/auto-complete")
 (add-path "emacs/vendor/auto-complete/lib/popup")
 
-;required by magit
-(add-path "emacs/vendor/git-modes")
-(add-path "emacs/vendor/magit")
-
 (add-path "emacs/jdee-2.4.1/lisp")
 (add-path "emacs/vendor/gradle-mode")
 
 (add-path "emacs/vendor/python-mode")
 (add-path "emacs/vendor/pymacs")
 (add-path "emacs/vendor/tuareg-mode")
-(add-path "emacs/vendor/ess/lisp")
 (add-path "emacs/vendor/matlab-emacs")
 (add-path "emacs/vendor/clojure-mode")
 (add-path "emacs/vendor/paredit")
 (add-path "emacs/vendor/cider")
 (add-path "emacs/vendor/emacs-for-python")
-(add-path "emacs/vendor/scala-mode2")
 (add-path "emacs/vendor/rinari")
 (add-path "emacs/vendor/rspec-mode")
 (add-path "emacs/vendor/puppet")
 (add-path "emacs/vendor/rvm")
 (add-path "emacs/vendor/distel/elisp")
-(add-path "emacs/vendor/coffee-mode")
-(add-path "emacs/vendor/go-mode")
 (add-path "emacs/vendor/monokai-theme")
 (add-path "emacs/vendor/themes") ;; color themes
 (add-path "emacs/init.d")
 )
 
+; list the packages you want
+(setq package-list '(
+		     coffee-mode
+		     ess
+		     go-mode
+		     ido-vertical-mode
+		     magit
+		     scala-mode2
+		     sbt-mode
+		     ))
+
+; list the repositories containing them
+(setq package-archives '(("elpa" . "http://tromey.com/elpa/")
+                         ("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+; activate all the packages
+(package-initialize)
+
+; fetch the list of packages available 
+(unless package-archive-contents
+  (package-refresh-contents))
+
+; install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
 ; these don't actually require a dedicated file in init.d/ to be loaded
 (require 'magit)
 (require 'ess-site)
-
-(require 'package)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)
 
 ;; Load various customizations
 (load "init.d")

@@ -5,3 +5,6 @@ semanticdb
 srecode-map.el
 *.elc
 elpa/
+eshell
+jdee*
+session*
