@@ -16,7 +16,7 @@
      (require 'rcodetools)
      (define-key ruby-mode-map (kbd "C-c C-c") 'xmp)))
 
-(global-rinari-mode)
+; (global-rinari-mode)
 
 (setq ruby-deep-arglist nil)
 (setq ruby-deep-indent-paren nil)

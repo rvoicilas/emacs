@@ -43,6 +43,7 @@
 		     magit
 		     scala-mode2
 		     sbt-mode
+		     rust-mode
 		     ))
 
 ; list the repositories containing them
