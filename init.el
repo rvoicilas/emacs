@@ -29,21 +29,22 @@
 (add-path "emacs/vendor/puppet")
 (add-path "emacs/vendor/rvm")
 (add-path "emacs/vendor/distel/elisp")
-(add-path "emacs/vendor/monokai-theme")
-(add-path "emacs/vendor/themes") ;; color themes
 (add-path "emacs/init.d")
 )
 
 ; list the packages you want
 (setq package-list '(
+		     ample-theme
 		     coffee-mode
 		     ess
 		     go-mode
 		     ido-vertical-mode
 		     magit
+		     ocp-indent
+		     rust-mode
 		     scala-mode2
 		     sbt-mode
-		     rust-mode
+		     ujelly-theme
 		     ))
 
 ; list the repositories containing them
