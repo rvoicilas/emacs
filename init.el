@@ -41,20 +41,30 @@
 		     ido-vertical-mode
 		     magit
 		     ocp-indent
+		     paredit
 		     rust-mode
-		     scala-mode2
 		     sbt-mode
 		     ujelly-theme
 		     ))
 
+(require 'package)
+
 ; list the repositories containing them
-(setq package-archives '(("elpa" . "http://tromey.com/elpa/")
+(setq
+ package-archives '(("elpa" . "http://tromey.com/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
-			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+			 ("melpa" . "http://melpa.milkbox.net/packages/")
+			 ("melpa-stable" . "http://stable.melpa.org/packages/")))
 
 ; activate all the packages
 (package-initialize)
+
+
+;; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
 ; fetch the list of packages available 
 (unless package-archive-contents
@@ -64,6 +74,10 @@
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
+
+(require 'use-package)
+(use-package ensime
+	     :pin melpa-stable)
 
 ; these don't actually require a dedicated file in init.d/ to be loaded
 (require 'magit)
