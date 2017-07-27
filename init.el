@@ -34,10 +34,13 @@
 
 ; list the packages you want
 (setq package-list '(
+		     alchemist
 		     ample-theme
 		     coffee-mode
+		     elixir-mode
 		     ess
 		     go-mode
+		     go-eldoc
 		     ido-vertical-mode
 		     magit
 		     ocp-indent
@@ -54,8 +57,8 @@
  package-archives '(("elpa" . "http://tromey.com/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
-			 ("melpa" . "http://melpa.milkbox.net/packages/")
-			 ("melpa-stable" . "http://stable.melpa.org/packages/")))
+			 ("melpa" . "https://melpa.milkbox.net/packages/")
+			 ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
 ; activate all the packages
 (package-initialize)
