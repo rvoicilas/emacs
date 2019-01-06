@@ -9,6 +9,7 @@
 (load "clojure")
 (load "ruby")
 (load "javascript")
+(load "typescript")
 (load "puppet")
 (load "erlang-custom")
 (load "coffee")
