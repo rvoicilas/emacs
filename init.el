@@ -38,6 +38,7 @@
 		     coffee-mode
 		     elixir-mode
 		     ess
+		     flycheck
 		     go-mode
 		     go-eldoc
 		     ido-vertical-mode
@@ -45,10 +46,16 @@
 		     ocp-indent
 		     paredit
 		     rust-mode
+		     scala-mode
 		     sbt-mode
 		     tide
 		     typescript-mode
 		     ujelly-theme
+		     utop
+		     rust-mode
+		     flymake-rust
+		     racer
+		     cargo
 		     ))
 
 (require 'package)
@@ -58,7 +65,7 @@
  package-archives '(("elpa" . "http://tromey.com/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
-			 ("melpa" . "https://melpa.milkbox.net/packages/")
+			 ("melpa" . "https://melpa.org/packages/")
 			 ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
 ; activate all the packages
@@ -94,17 +101,3 @@
 
 ;; Load various customizations
 (load "init.d")
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (typescript-mode use-package ujelly-theme rust-mode paredit ocp-indent magit ido-vertical-mode go-eldoc ess ensime coffee-mode auto-complete ample-theme alchemist))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

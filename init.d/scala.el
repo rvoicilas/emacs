@@ -1,2 +1,2 @@
-(require 'scala-mode2)
+(require 'scala-mode)
 (require 'sbt-mode)
