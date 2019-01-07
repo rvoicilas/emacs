@@ -10,8 +10,6 @@
 				(concat emacs-root p))))
 
 (add-path "emacs/vendor")
-(add-path "emacs/vendor/auto-complete")
-(add-path "emacs/vendor/auto-complete/lib/popup")
 
 (add-path "emacs/jdee-2.4.1/lisp")
 (add-path "emacs/vendor/gradle-mode")
@@ -35,6 +33,7 @@
 ; list the packages you want
 (setq package-list '(
 		     alchemist
+		     auto-complete
 		     ample-theme
 		     coffee-mode
 		     elixir-mode
@@ -47,6 +46,8 @@
 		     paredit
 		     rust-mode
 		     sbt-mode
+		     tide
+		     typescript-mode
 		     ujelly-theme
 		     ))
 
@@ -62,6 +63,9 @@
 
 ; activate all the packages
 (package-initialize)
+
+; large packages
+(setq url-http-attempt-keepalives nil)
 
 
 ;; Bootstrap `use-package'
@@ -79,8 +83,10 @@
     (package-install package)))
 
 (require 'use-package)
+
 (use-package ensime
-	     :pin melpa-stable)
+  :ensure t
+  :pin melpa-stable)
 
 ; these don't actually require a dedicated file in init.d/ to be loaded
 (require 'magit)
@@ -88,3 +94,17 @@
 
 ;; Load various customizations
 (load "init.d")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (typescript-mode use-package ujelly-theme rust-mode paredit ocp-indent magit ido-vertical-mode go-eldoc ess ensime coffee-mode auto-complete ample-theme alchemist))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
