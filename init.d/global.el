@@ -60,3 +60,11 @@
 ;; (setq-default c-basic-offset 4
 ;; 	      tab-width 4
 ;; 	      indent-tabs-mode t)
+
+(require 'helm)
+(require 'helm-projectile)
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)

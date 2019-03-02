@@ -32,6 +32,7 @@
 
 ; list the packages you want
 (setq package-list '(
+		     ag
 		     alchemist
 		     auto-complete
 		     ample-theme
@@ -41,6 +42,9 @@
 		     flycheck
 		     go-mode
 		     go-eldoc
+		     helm
+		     helm-ag
+		     helm-projectile
 		     ido-vertical-mode
 		     magit
 		     ocp-indent
@@ -52,6 +56,7 @@
 		     typescript-mode
 		     ujelly-theme
 		     utop
+		     projectile
 		     rust-mode
 		     flymake-rust
 		     racer
